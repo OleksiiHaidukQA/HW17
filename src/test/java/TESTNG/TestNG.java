@@ -1,11 +1,12 @@
-package HW16;
+package TESTNG;
+
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
-import static org.openqa.selenium.By.*;
+import static org.openqa.selenium.By.ByXPath;
 
 //1)Первый тест: открытие сайта, ждем попап и кликаем на крестик//
 
@@ -54,5 +55,6 @@ public class SelenideTests {
         $(new ByXPath("/html/body/div[2]/header/div/a/img")).should(Condition.disappear);
     }
 }
+
 
 
